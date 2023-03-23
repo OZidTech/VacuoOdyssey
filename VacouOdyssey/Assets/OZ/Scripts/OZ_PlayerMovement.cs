@@ -14,7 +14,7 @@ public class OZ_PlayerMovement : MonoBehaviour
 
     public void MoveRight()
     {
-
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 
     public void MoveUp()
