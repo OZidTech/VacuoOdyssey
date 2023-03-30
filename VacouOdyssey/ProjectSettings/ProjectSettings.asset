@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
+<<<<<<< Updated upstream
   productGUID: fc7c7c521a63f5443ae0bcd567d3882f
+=======
+  productGUID: 68d640748c3e1234686958d02aab2c4f
+>>>>>>> Stashed changes
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -806,8 +810,21 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
+<<<<<<< Updated upstream
   platformArchitecture: {}
   scriptingBackend: {}
+=======
+  platformArchitecture:
+    iPhone: 1
+  scriptingBackend:
+    Android: 0
+    Standalone: 0
+    WP8: 2
+    WebGL: 1
+    WebPlayer: 0
+    Windows Store Apps: 2
+    iPhone: 1
+>>>>>>> Stashed changes
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
