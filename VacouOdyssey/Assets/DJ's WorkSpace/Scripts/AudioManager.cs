@@ -5,24 +5,29 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    SoundList library;
+    public SoundList library;
     public AudioSource soundFXSource;
     public AudioSource musicSource;
 
-    public void PlaySoundFX(AudioClip clip)
+    public void Awake()
     {
-        soundFXSource.clip = clip;
-        soundFXSource.Play();
+        //library = FindObjectOfType<SoundList>();
     }
 
-    public void PlayMusic(AudioClip clip)
-    {
-        musicSource.clip = clip;
-        musicSource.Play();
-    }
+    //public void PlaySoundFX(AudioClip clip)
+    //{
+    //    soundFXSource.clip = clip;
+    //    soundFXSource.Play();
+    //}
+
+    //public void PlayMusic(AudioClip clip)
+    //{
+    //    musicSource.clip = clip;
+    //    musicSource.Play();
+    //}
     public void PlaySound2D(string soundName)
     {
         //sfx2DSource.pitch = Random.Range(lowPitch, 1);
-        soundFXSource.PlayOneShot(library.GetClipFromName(soundName), 1);
+        soundFXSource.PlayOneShot(library.GetClipFromName(soundName), 0.5f);
     }
 }

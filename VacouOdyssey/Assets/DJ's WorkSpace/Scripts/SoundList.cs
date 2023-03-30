@@ -26,6 +26,7 @@ public class SoundList : MonoBehaviour
         if (groupDictionary.ContainsKey(audioName))
         {
             AudioClip[] sounds = groupDictionary[audioName];
+            //return sounds[0];
             return sounds[Random.Range(0, sounds.Length)];
         }
         return null;
