@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
-  productGUID: 8656d69e4fc5b0943a0a447dac80557a
+  productGUID: fc7c7c521a63f5443ae0bcd567d3882f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -604,6 +604,8 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
+  platformArchitecture: {}
+  scriptingBackend: {}
   platformArchitecture:
     iPhone: 1
   scriptingBackend:
