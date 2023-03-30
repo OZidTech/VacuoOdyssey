@@ -21,9 +21,10 @@ public class VacHitBox : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            collision.transform.position = Vector3.Lerp(collision.transform.position, (new Vector3(GetComponentInParent<Transform>().position.x, GetComponentInParent<Transform>().position.y, GetComponentInParent<Transform>().position.z)), 0.02f);
+            collision.transform.position = Vector3.Lerp(collision.transform.position, transform.parent.position, 0.02f);
+
             //collision.transform.Translate(transform.position * 2 *Time.deltaTime);
-            //collision.transform.Rotate(Vector3.fwd * 10  * Time.deltaTime);
+            collision.transform.Rotate(Vector3.fwd * 100  * Time.deltaTime);
             //Destroy(collision.gameObject);
             
             
