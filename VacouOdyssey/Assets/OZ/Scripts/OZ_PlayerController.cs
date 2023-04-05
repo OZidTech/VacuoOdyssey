@@ -9,6 +9,7 @@ public class OZ_PlayerController : MonoBehaviour
     public UnityEvent onRightPress;
     public UnityEvent onUpPress;
     public UnityEvent onDownPress;
+    public UnityEvent onMousePress;
 
 
 
@@ -35,6 +36,10 @@ public class OZ_PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             onDownPress.Invoke();
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            onMousePress.Invoke();
         }
     }
 }
