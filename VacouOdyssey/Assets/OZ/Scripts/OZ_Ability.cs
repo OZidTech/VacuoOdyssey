@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OZ_EnemyMovement : MonoBehaviour
+public class OZ_Ability : MonoBehaviour
 {
-    [SerializeField]
     public enum Ability
     {
+        None,
         sword,
         punch,
         lazer
     };
 
     public Ability ability;
-    
 }

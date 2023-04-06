@@ -18,6 +18,8 @@ public class OZ_PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 5);
+        //Debug.DrawRay(transform.position, Vector3.right, Color.red, 5);
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             onLeftPress.Invoke();
@@ -26,8 +28,9 @@ public class OZ_PlayerController : MonoBehaviour
         {
             onRightPress.Invoke();
         }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
+            
             onUpPress.Invoke();
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
